@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand} from 'reactstrap';
-import { Directory } from './DirectoryComponent';
-import { CampsiteInfo } from './CampsiteInfoComponent';
-import { CAMPSITES } from './shared/campsites';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Directory from './DirectoryComponent';
+import CampsiteInfo from './CampsiteInfoComponent';
+import { CAMPSITES } from '../shared/campsites';
 
 class Main extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class Main extends Component {
         };
     }
 
-    onCampsiteSelect(camsiteId) {
+    onCampsiteSelect(campsiteId) {
         this.setState({selectedCampsite: campsiteId});
     }
 
@@ -22,7 +22,7 @@ class Main extends Component {
             <div>
                 <Navbar dark color="primary">
                     <div className="container">
-                        <NavbarBrand href="/">Nucamp</NavbarBrand>
+                        <NavbarBrand href="/">NuCamp</NavbarBrand>
                     </div>
                 </Navbar>
                 <Directory campsites={this.state.campsites} onClick={campsiteId => this.onCampsiteSelect(campsiteId)}/>

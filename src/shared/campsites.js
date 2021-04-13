@@ -60,7 +60,7 @@ export const CAMPSITES = [
             {
                 id: 1,
                 rating: 4, 
-                text: "The campground was beautiful, but the bugs could bite sometimes.",
+                text: "Great for kayaking but be careful you can be wiped out!",
                 author: "Brennen Ech",
                 date: "2017-06-17T03:33Z"
             },
@@ -97,7 +97,7 @@ export const CAMPSITES = [
             {
                 id: 0,
                 rating: 5, 
-                text: "What a magnificent view!",
+                text: "This trail is great! It has 3 different difficulties easy, medium and extreme.",
                 author: "Tinus Lorvaldes",
                 date: "2018-10-25T16:30Z"
             },
