@@ -20,7 +20,7 @@ function RenderComments({comments}) {
     if (comments) {
         return (
             <div className="md-5 m-1">
-                <h4>comments</h4>
+                <h5>Comments</h5>
                 {
                     comments.map(comment => {
                         return (
@@ -41,12 +41,12 @@ function RenderComments({comments}) {
 }
 
 function CampsiteInfo(props) {
-    if (this.props.campsite) {
+    if (props.campsite) {
         return (
             <div className="container">
                 <div className="row">
                     <RenderCampsite campsite={props.campsite}/>
-                    <RenderComments campsite={props.campsite.comments} />
+                    <RenderComments comments={props.campsite.comments} />
                 </div>
             </div>
         );
