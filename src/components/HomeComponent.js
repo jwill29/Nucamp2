@@ -17,13 +17,13 @@ function Home(props) {
                 <div className="col-md m-1">
                     <RenderCard
                         item={props.promotion}
-                        isLoading={props.campsitesLoading}
-                        errMess={props.campsitesErrMess}
+                        isLoading={props.promotionLoading}
+                        errMess={props.promotionErrMess}
                     />
                 </div>
                 <div className="col-md m-1">
                     <RenderCard
-                        item={props.promotion}
+                        item={props.partner}
                         isLoading={props.promotionLoading}
                         errMess={props.promotionErrMess}
                     />
